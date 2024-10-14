@@ -1,91 +1,98 @@
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Oxygen', sans-serif;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
-.quarterly-goals-component {
-    width: 300px;
-    font-family: 'Oxygen', sans-serif;
-    color: #4B5853;
-    margin: 20px;
+.quarterly-goals {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    width: 387px;
+    height: 591px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.quarterly-goals-component h2 {
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+h2 {
     font-size: 27.5px;
     font-weight: 400;
-    line-height: 34.72px;
-    margin: 0;
     color: #4B5853;
+    margin: 0;
 }
 
-.quarterly-goals-component h3 {
+h3 {
     font-size: 22.5px;
     font-weight: 700;
     color: #4B5853;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
+    margin: 8px 0;
 }
 
 .edit-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.goal {
+    margin: 15px 0;
     display: flex;
-    justify-content: flex-start;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.edit-icon img {
-    width: 19.97px;
-    height: 19.99px;
-}
-
-.goal-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.goal-list li {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 10px;
-}
-
-.goal-text {
+.goal-content {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
+    align-items: center;
+    gap: 10px;
 }
 
-.goal-text p {
-    margin: 0;
+.checkbox {
+    width: 21.04px;
+    height: 21.06px;
+    cursor: pointer;
+}
+
+.goal p {
     font-size: 16.25px;
     font-weight: 400;
-    line-height: 20.52px;
+    color: #5A5A5A;
+    margin: 0;
 }
 
 .tag {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 2px;
+    display: block;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
-.tag.class-algorithms {
+.class-algorithms {
     color: #FFB987;
 }
 
-.tag.apply-internships {
+.apply-internships {
     color: #2DBDB1;
 }
 
-.tag.interview-technical {
+.interview-technical {
     color: #EE8B72;
 }
 
@@ -93,8 +100,13 @@ body {
     font-size: 15px;
     font-weight: 400;
     color: #5A5A5A;
-    margin-top: 5px;
-    text-align: left;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #000000;
+    opacity: 15%;
+    margin: 15px 0;
 }
 
 .add-goal {
@@ -102,4 +114,10 @@ body {
     font-weight: 400;
     color: #5A5A5A;
     cursor: pointer;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.add-goal:hover {
+    color: #4B5853;
 }
